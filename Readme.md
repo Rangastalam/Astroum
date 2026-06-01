@@ -190,6 +190,15 @@ If the budget is exceeded:
 This process is logged for transparency.
 
 ---
+User records contain a ceiling_level field
+that supports future visibility filtering.
+
+In the provided dataset, the maximum
+distance_from_entry is 4, while all users
+have ceiling levels greater than or equal
+to 4. Therefore ceiling-level filtering does
+not affect composition results for the
+current dataset.
 
 ### Step 5: Human Override Detection
 
