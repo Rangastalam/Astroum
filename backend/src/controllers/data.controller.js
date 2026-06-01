@@ -5,7 +5,7 @@ export async function getUsers() {
     const { data, error } = await supabase
       .from("users")
       .select("*");
-    console.log(data);
+    
 
     if (error) {
       console.error("Users query failed:", error);
@@ -23,7 +23,7 @@ export async function getPatients() {
     const { data, error } = await supabase
       .from("patients")
       .select("*");
-    console.log(data);
+    
     if (error) {
       console.error("patients query failed:", error);
       throw error;
